@@ -12,7 +12,7 @@ export const App = () => {
         {selectedItem ? (
           <PortfolioItemPage item={selectedItem} clickFn={setSelectedItem} />
         ) : (
-          <PortfolioPage clickFn={selectedItem} />
+          <PortfolioPage clickFn={setSelectedItem} />
         )}
       </div>
       ;
